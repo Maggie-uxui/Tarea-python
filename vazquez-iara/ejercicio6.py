@@ -100,3 +100,47 @@ print(numero, "^", exponente, "=", potencia(numero, exponente))
 
 # 6)---------------------------------------
 
+def primo (n):
+
+    if n % n:
+        print(n, "No es un número primo")
+        return
+    
+    if n == 2:
+        print(2, "Es un número primo")
+        return
+    
+    for i in range(2 , n):
+        if n % i == 0:
+
+            print(n, "No es un número primo")
+            return
+
+    print(n, "Es un número primo")
+
+numero = int(input("ingrese un número:"))
+
+primo(numero)
+
+#7)--------------------------------------------
+
+#adssa
+
+#8)--------------------------------------------
+
+def cuenta (n):
+
+    if n < 1:
+        print("Tiene que ser un número mayor o igual a 1")
+        return
+
+    for i in range(n,0,-1):
+        print(i)
+
+numero=int(input("Ingrese un número: "))
+
+cuenta(numero)
+
+#9)--------------------------------------------
+
+
