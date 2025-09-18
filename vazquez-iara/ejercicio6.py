@@ -124,8 +124,49 @@ primo(numero)
 
 #7)--------------------------------------------
 
-#adssa
+def sumar(a, b):
+    return a + b
 
+def restar(a, b):
+    return a - b
+
+def multiplicar(a, b):
+    return a * b
+
+def dividir(a, b):
+    return a / b   
+
+
+opcion = 0
+
+while opcion != 5:
+    print("\n--- Calculadora ---")
+    print("1. Sumar")
+    print("2. Restar")
+    print("3. Multiplicar")
+    print("4. Dividir")
+    print("5. Salir")
+
+    opcion = int(input("Elija una opción: "))
+
+    if opcion == 5:
+        print("Saliendo...")
+        break
+
+    a = float(input("Ingrese el primer número: "))
+    b = float(input("Ingrese el segundo número: "))
+
+    if opcion == 1:
+        print("Resultado:", sumar(a, b))
+    elif opcion == 2:
+        print("Resultado:", restar(a, b))
+    elif opcion == 3:
+        print("Resultado:", multiplicar(a, b))
+    elif opcion == 4:
+        print("Resultado:", dividir(a, b))
+    else:
+        print("Opción inválida")
+      
 #8)--------------------------------------------
 
 def cuenta (n):
@@ -142,5 +183,66 @@ numero=int(input("Ingrese un número: "))
 cuenta(numero)
 
 #9)--------------------------------------------
+
+def sumas(n):
+    pares = 0
+    impares = 0
+
+    for a in range(1, n + 1):
+        
+        if a % 2 == 0:   
+            pares = a + pares
+        else:            
+            impares = a + impares
+
+    print("Suma de pares:", pares)
+    print("Suma de impares:", impares)
+
+
+numero = int(input("Ingrese un número entero positivo: "))
+
+sumas(numero)
+
+#10)--------------------------------------------
+
+saldo = 1000  
+
+opcion = 0
+
+while opcion != 4:
+    
+    print("--- Cajero Automático ---")
+    
+    print("1. Depositar dinero")
+    
+    print("2. Retirar dinero")
+    
+    print("3. Mostrar saldo")
+    
+    print("4. Salir")
+    
+    opcion = int(input("Elija una opción: "))
+
+    if opcion == 1:
+        monto = float(input("Ingrese el monto a depositar: $"))
+        saldo = saldo + monto
+        print("Depósito exitoso. Saldo actual: $", saldo)
+
+    elif opcion == 2:
+        monto = float(input("Ingrese el monto a retirar: $"))
+        
+        if monto <=  saldo:
+            
+            saldo = saldo - monto
+            print("Retiro exitoso. Saldo actual: $", saldo)
+        else:
+            print("Fondos insuficientes. Saldo actual: $", saldo)
+
+    elif opcion == 3:
+        print("Su saldo actual es: $", saldo)
+
+    elif opcion == 4:
+        print("saliendo...")
+
 
 
