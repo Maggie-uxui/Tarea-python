@@ -1,56 +1,64 @@
+#1) 2)
+
+frutas=["manzanas","peras","bananas","duraznos"]
+print(frutas[0])
+print(frutas[3])
+
+frutas.append("naranjas")
+print(len(frutas))
+
 #3) y 4)--------------------
 
-colores=[]
-nuevo_color=[]
+# colores=[]
+# nuevo_color=[]
 
-for a in range(0,10):
-    colores.append(input("Ingrese un color: "))
+# for a in range(0,10):
+#     colores.append(input("Ingrese un color: "))
 
-for a in range(0,10):
-    print(colores[a])
+# for a in range(0,10):
+#     print(colores[a])
     
-nuevo_color=input("Ingrese un nuevo color: ")
+# nuevo_color=input("Ingrese un nuevo color: ")
 
-encontrado = False
+# encontrado = 0
 
-for color in colores:
-    if color == nuevo_color:
-        encontrado = True
-        break
+# for color in colores:
+#     if color == nuevo_color:
+#         encontrado = True
+#         break
 
-if encontrado:
+# if encontrado:
     
-     print("El color", nuevo_color, "ya se encuentra en la lista")
+#      print("El color", nuevo_color, "ya se encuentra en la lista")
      
-else:
+# else:
     
-    print("El color ", nuevo_color, " se ha agregado a la lista")
+#     print("El color ", nuevo_color, "no se encuentra en la lista")
 
-#6)-----------------------------
+#5)-----------------------------
 
-numeros = [4, 98, 257, -85, 0, 21, -582, 148, -293]
+# numeros = [4, 98, 257, -85, 0, 21, -582, 148, -293]
 
-mayor = numeros[0]   
+# mayor = numeros[0]   
 
-for a in range(len(numeros)):   
-    if numeros[a] > mayor:      
-        mayor = numeros[a]
-print("El número mayor es:", mayor)
+# for a in range(len(numeros)):   
+#     if numeros[a] > mayor:      
+#         mayor = numeros[a]
+# print("El número mayor es:", mayor)
 
-suma = 0
-for a in range(len(numeros)):
-    suma =suma + numeros[a]
-print("La suma de los números es:", suma)
+# suma = 0
+# for a in range(len(numeros)):
+#     suma =suma + numeros[a]
+# print("La suma de los números es:", suma)
 
-positivos = 0
-for a in range(len(numeros)):
-    if numeros[a] > 0:
-        positivos = positivos + 1
-print("La cantidad de números positivos es:", positivos)
+# positivos = 0
+# for a in range(len(numeros)):
+#     if numeros[a] > 0:
+#         positivos = positivos + 1
+# print("La cantidad de números positivos es:", positivos)
 
-pares = []
-for a in range(len(numeros)):
-    if numeros[a] % 2 == 0:
-        pares.append(numeros[a])
-print("Los números pares son:", pares)
-
+# pares = []
+# for a in range(len(numeros)):
+#     if numeros[a] % 2 == 0:
+#         pares.append(numeros[a])
+# print("Los números pares son:", pares)
