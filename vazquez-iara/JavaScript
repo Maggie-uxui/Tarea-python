@@ -2,28 +2,47 @@
 
 //var es una variable global, se pone predeterminado cuando no se declara con let
 
+//
+
 // python---------
 
 frutas=["manzana","bananas","naranjas"]
 
-frutas[1]="pera" //para cambiar el valor del indice 
+frutas[1]="pera" // para cambiar el valor del indice 
 
-frutas.append("uva") //para agregar un valor a la lista
+frutas.append("uva") // para agregar un valor a la lista
 
-frutas.pop() //para eliminar un elemeno de la lista (si esta vacio elimina el ultimo elemento)
+frutas.pop() // para eliminar un elemeno de la lista (si esta vacio elimina el ultimo elemento)
 
-print(frutas[0]) //para acceder y mostrar un objeto (manzanas)
+print(frutas[0]) // para acceder y mostrar un objeto (manzanas)
+
+print(len(frutas)) // muestra la cantidad de valores que hay en la lista
+
+//ejemplo de recorrer la lista
+
+for i in Range(0,len(frutas)): // mustra una lista de los elementos dentro de la lista
 
 //js--------------
 
 let frutas=["manzana","bananas","naranjas"];
 
-frutas[1]="pera"; //para cambiar el valor del indice 
+frutas[1]="pera"; // para cambiar el valor del indice 
 
-frutas.push("Uva"); //para agregar un valor a la lista
+frutas.push("Uva"); // para agregar un valor a la lista
 
-frutas.pop(); //para eliminar un elemeno de la lista (si esta vacio elimina el ultimo elemento)
+frutas.pop(); // para eliminar un elemeno de la lista (si esta vacio elimina el ultimo elemento)
 
-console.log(frutas[1]); //para acceder y mostrar un objeto (bananas/pera) tambien se puede usar alert
+console.log(frutas[1]); // para acceder y mostrar un elemento (bananas/pera) tambien se puede usar alert
 
-console.log(frutas); // muestra todo lo que hay en la lista 
+console.log(frutas); // muestra la lista completa con todos los elementos (numero de posicion, cantidad)
+
+console.log(frutas.length); // muestra la cantidad de valores que hay en la lista
+
+
+//ejemplo de recorrer la lista
+
+for (let i=0; i<frutas.length; i++){ // mustra una lista de los elementos dentro de la lista
+    console.log(frutas[i]);
+}  
+
+
