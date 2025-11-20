@@ -1,0 +1,16 @@
+//let titulo=document.querySelector("h1"); // selecciona la primera etiqueta (tambien se puede seleccionar clases como en css .class)
+//let titulo=document.getElementById("titulo-principal"); // se utiliza para modificar una ID 
+// titulo.textContent="hola";  // se modifica el titulo en este caso
+// titulo.style.color="yellow"; // modifico el color del titulo
+//console.log(titulo.textContent);
+//alert(titulo.textContent);
+let miDiv=document.getElementById("miDiv"); //
+console.log(miDiv.innerHTML); //
+
+//let miBotonç=document.getElementById("miBoton"); //
+
+function saludo(){
+    miDiv.innerHTML="<p>hiciste click equisde</p>"
+}
+
+miBoton.addEventListener("click",saludo); // cuando haga click en el boton ejecuta una accion 
